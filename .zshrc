@@ -31,12 +31,12 @@ fi
 
 PS1="%F{purple}%n%F{green}@%F{purple}%m%F{blue} %~ %F{purple}$VCS$ind%F{white} "
 
-zstyle :compinstall filename '/home/nick/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
 
-alias work="cd /home/nick/Workspace"
+alias work="cd $HOME/Workspace"
 alias p="ps aux"
 alias ls="ls --color=auto"
 alias yay="yay --sudo /usr/bin/doas"
