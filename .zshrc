@@ -37,6 +37,8 @@ autoload -Uz compinit
 compinit
 
 alias work="cd $HOME/Workspace"
+alias idea="cd $HOME/IdeaProjects"
+alias charm="cd $HOME/PycharmProjects"
 alias p="ps aux"
 alias ls="ls --color=auto"
 alias yay="yay --sudo /usr/bin/doas"
@@ -45,3 +47,5 @@ alias ydl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestau
 alias ydl-sq="youtube-dl -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-a="youtube-dl -f 'bestaudio[ext=m4a]/bestaudio' --merge-output-format mp3 "
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
+
+export PATH=$PATH:$HOME/apps
