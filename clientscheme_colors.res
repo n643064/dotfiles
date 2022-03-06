@@ -5,13 +5,14 @@ Scheme
 	{
 		// HUD COLORS
 		//---------------------------------------------
-		"ColorRed"					"255 0 0 255"
+		"ColorRed"					"227 31 72 255"
 		"ColorYellow"				"255 255 0 255"
 		"ColorGreen"				"48 255 48 255"
-		"ColorCyan"					"72 255 255 255"
-		"ColorCyanShadow"			"72 100 100 255"
+		"ColorCyan"				"155 101 237 255"
+		"ColorCyanShadow"			"175 70 157 255"
+		"ColorCyanTransparent"		"155 101 237 128"
 		"ColorBlue"					"0 0 255 255"
-		"ColorPurple"				"128 0 255 255"
+		"ColorPurple"				"208 21 111 255"
 		"ColorMagenta"				"255 0 255 255"
 		"ColorBlack"				"0 0 0 255"
 		"ColorGreyMid"				"128 128 128 255"
@@ -33,7 +34,7 @@ Scheme
 		"Heal Numbers"				"48 255 48 255"
 		"Damage Numbers"			"72 255 255 255"
 		"ItemPanelBG"				"50 50 50 255"
-		"Button Color"				"72 255 255 255"
+		"Button Color"				"155 101 237 255"
 		//---------------------------------------------
 		// Crosshair Colors
 		"Crosshair"					"242 242 242 255"
@@ -59,7 +60,7 @@ Scheme
 		// DEFAULT COLORS
 		//---------------------------------------------
 		"Orange"								"ColorCyan"
-		"OrangeDim"								"ColorCyan"
+		"OrangeDim"								"ColorCyanShadow"
 		"LightOrange"							"188 112 0 128"
 		"GoalOrange"							"255 133 0 255"
 		"TFOrange"								"145 73 59 255"
@@ -88,8 +89,8 @@ Scheme
 		"RedSolid"								"205 50 50 255"
 		"Blue"									"70 130 180 150"
 		"BlueSolid"								"70 130 180 255"
-		"Yellow"								"251 235 202 255"
-		"TransparentYellow"						"251 235 202 140"
+		"Yellow"								"ColorCyan"
+		"TransparentYellow"						"ColorCyanTransparent"
 		"BrightYellow"							"251 235 0 255"
 		"GreenSolid"							"76 107 34 255"
 
