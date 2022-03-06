@@ -1,5 +1,7 @@
 Scheme
 {
+	// Note, this is from rayshud
+	// www.github.com/raysfire/rayshud
 	//////////////////////// COLORS ///////////////////////////
 	Colors
 	{
