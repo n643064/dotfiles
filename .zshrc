@@ -42,11 +42,14 @@ alias p="ps aux"
 alias ls="ls --color=auto"
 alias yay="yay --sudo /usr/bin/doas"
 alias lite='(){lite $1 & disown}'
-alias ydl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
-alias ydl-wq="youtube-dl -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
-alias ydl-a="youtube-dl -f 'bestaudio[ext=m4a]/bestaudio' --merge-output-format mp3 "
+export YDL="/usr/bin/yt-dlp"
+alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
+alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
+alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio' --merge-output-format mp3 "
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
 
 alias radio-swing="mpv http://lainon.life:8000/swing.mp3"
+alias radio-cyberia="mpv http://lainon.life:8000/cyberia.mp3"
+alias radio-cafe="mpv http://lainon.life:8000/cafe.mp3"
 
 export PATH=$PATH:$HOME/apps
