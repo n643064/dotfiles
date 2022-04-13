@@ -20,6 +20,12 @@ zstyle ':vcs_info:git*' formats "[%s] %F{yellow}%r%F{red}@%F{yellow}%b "
 bindkey -e
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
+bindkey "^[[3~" delete-char-or-list
+bindkey "^H" backward-kill-word
+bindkey "^[[3;5~" kill-word
+bindkey "^Z" undo
+
+
 
 if [[ $UID == 0 || $EUID == 0 ]]
 then
@@ -47,9 +53,5 @@ alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' -
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio' --merge-output-format mp3 "
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
-
-alias radio-swing="mpv http://lainon.life:8000/swing.mp3"
-alias radio-cyberia="mpv http://lainon.life:8000/cyberia.mp3"
-alias radio-cafe="mpv http://lainon.life:8000/cafe.mp3"
 
 export PATH=$PATH:$HOME/apps
