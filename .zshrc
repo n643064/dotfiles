@@ -51,7 +51,7 @@ alias lite='(){lite $1 & disown}'
 export YDL="/usr/bin/yt-dlp"
 alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
-alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio' --merge-output-format mp3 "
+alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio'"
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
 
 export PATH=$PATH:$HOME/apps
