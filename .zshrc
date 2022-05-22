@@ -29,23 +29,19 @@ bindkey "^Z" undo
 
 if [[ $UID == 0 || $EUID == 0 ]]
 then
-ind="%F{red}[#]"
+	ind="%F{red}[#]"
 else
-ind="%F{green}$"
+	ind="%F{magenta}$"
 fi
 
-PS1="%F{purple}%n%F{green}@%F{purple}%m%F{blue} %~ %F{purple}$VCS$ind%F{white} "
+PS1="%F{yellow}%n%F{cyan}@%F{blue}%m%F{green} %~ %F{magenta}$VCS$ind %F{white}"
 
 zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
-
-alias work="cd $HOME/Workspace"
-alias idea="cd $HOME/IdeaProjects"
-alias charm="cd $HOME/PycharmProjects"
 alias p="ps aux"
-alias ls="ls --color=auto"
+alias ls="ls -lah --color=auto"
 alias yay="yay --sudo /usr/bin/doas"
 alias lite='(){lite $1 & disown}'
 export YDL="/usr/bin/yt-dlp"
@@ -53,5 +49,9 @@ alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' -
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio'"
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
-
 export PATH=$PATH:$HOME/apps
+
+# This is the useless part
+alias cmatrix="cmatrix -C red"
+
+
