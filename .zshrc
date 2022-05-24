@@ -34,7 +34,7 @@ else
 	ind="%F{magenta}$"
 fi
 
-PS1="%F{yellow}%n%F{cyan}@%F{blue}%m%F{green} %~ %F{magenta}$VCS$ind %F{white}"
+PS1="%F{yellow}%n%F{blue}%B@%b%F{red}%m%F{green} %~ %F{magenta}$VCS$ind %F{white}"
 
 zstyle :compinstall filename '$HOME/.zshrc'
 
@@ -49,6 +49,7 @@ alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' -
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio'"
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
+alias lsp="echo $PATH | tr \":\" \" \" | xargs ls | grep -v \"/\""
 export PATH=$PATH:$HOME/apps
 
 # This is the useless part
