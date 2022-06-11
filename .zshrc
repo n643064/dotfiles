@@ -51,7 +51,7 @@ alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio'"
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
 alias lsp="echo $PATH | tr \":\" \" \" | xargs ls | grep -v \"/\""
 export PATH=$PATH:$HOME/apps
-
+export EDITOR="micro"
 # This is the useless part
 alias cmatrix="cmatrix -C red"
 
