@@ -41,9 +41,8 @@ zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
 alias p="ps aux"
-alias ls="ls -lah --color=auto"
-alias yay="yay --sudo /usr/bin/doas"
-alias lite='(){lite $1 & disown}'
+alias ll="ls -lah --color=auto"
+
 export YDL="/usr/bin/yt-dlp"
 alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
@@ -52,6 +51,8 @@ alias wip="curl https://www.plaintextip.com/ && echo '\n'"
 alias lsp="echo $PATH | tr \":\" \" \" | xargs ls | grep -v \"/\""
 export PATH=$PATH:$HOME/apps
 export EDITOR="micro"
+alias back='(){cd $OLDPWD}'
+alias bat="batcat"
 # This is the useless part
 alias cmatrix="cmatrix -C red"
 
