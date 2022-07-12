@@ -42,6 +42,7 @@ autoload -Uz compinit
 compinit
 alias p="ps aux"
 alias ll="ls -lah --color=auto"
+alias ls="ls --color=auto"
 
 export YDL="/usr/bin/yt-dlp"
 alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
