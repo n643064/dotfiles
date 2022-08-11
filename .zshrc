@@ -43,7 +43,7 @@ compinit
 alias p="ps aux"
 alias ll="ls -lah --color=auto"
 alias ls="ls --color=auto"
-
+alias cp="cp -r"
 export YDL="/usr/bin/yt-dlp"
 alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
@@ -56,5 +56,5 @@ alias back='(){cd $OLDPWD}'
 alias bat="batcat"
 # This is the useless part
 alias cmatrix="cmatrix -C red"
-
+alias gpu-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
 
