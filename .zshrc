@@ -56,5 +56,5 @@ alias back='(){cd $OLDPWD}'
 alias bat="batcat"
 # This is the useless part
 alias cmatrix="cmatrix -C red"
-alias gpu-run="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia"
-
+alias ip="ip --color"
+alias lsblk="lsblk -n -o NAME,SIZE,TYPE,STATE,MOUNTPOINT"
