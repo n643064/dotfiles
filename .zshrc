@@ -46,5 +46,6 @@ alias ip="ip --color"
 alias lsblk="lsblk -n -o NAME,SIZE,TYPE,STATE,MOUNTPOINT"
 alias sherlock="sherlock --print-found"
 alias fdisk="fdisk --wipe=never"
+alias sqlite3="sqlite3 -table"
 source .zshrc-ydl
 test -r /home/nick/.opam/opam-init/init.zsh && . /home/nick/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
