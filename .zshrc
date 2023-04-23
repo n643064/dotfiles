@@ -47,6 +47,6 @@ alias lsblk="lsblk -f -n -o NAME,SIZE,TYPE,STATE,MOUNTPOINT"
 alias sherlock="sherlock --print-found"
 alias fdisk="fdisk --wipe=never"
 alias sqlite3="sqlite3 -table"
-alias mount="mount --mkdir"
+alias mount="mount -o X-mount.mkdir"
 source .zshrc-ydl
 test -r /home/nick/.opam/opam-init/init.zsh && . /home/nick/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
