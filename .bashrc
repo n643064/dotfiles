@@ -19,7 +19,7 @@ fi
 
 
 alias ll="ls -lah --color=auto"
-alias ls="ls --color=auto"
+alias ls="ls -a --color=auto"
 alias cp="cp -r"
 alias wip="curl https://www.plaintextip.com/ && echo '\n'"
 alias lsp="echo $PATH | tr \":\" \" \" | xargs ls | grep -v \"/\""
