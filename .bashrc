@@ -6,7 +6,13 @@ HISTFILESIZE=1000
 
 
 shopt -s checkwinsize
-export PS1='\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 2)\] \W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'
+
+
+if [ -n "$SSH_CLIENT" ] || [ -n "SSH_TTY" ]; then
+	export PS1='\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 5)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'	
+else
+	export PS1='\[$(tput bold)\]\[$(tput setaf 6)\][SSH] \[$(tput setaf 4)\]\u\[$(tput setaf 5)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'	
+fi
 
 
 if ! shopt -oq posix; then
@@ -36,3 +42,5 @@ alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' -
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio' -o '%(title)s.%(ext)s'"
 alias ydl-at="$YDL -f 'bestaudio[ext=m4a]/bestaudio' -o '%(uploader)s - %(title)s.%(ext)s'"
+
+export TERM=xterm
