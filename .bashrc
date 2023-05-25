@@ -8,10 +8,10 @@ HISTFILESIZE=1000
 shopt -s checkwinsize
 
 
-if [ -n "$SSH_CLIENT" ] || [ -n "SSH_TTY" ]; then
-	export PS1='\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 5)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'	
-else
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
 	export PS1='\[$(tput bold)\]\[$(tput setaf 6)\][SSH] \[$(tput setaf 4)\]\u\[$(tput setaf 5)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'	
+else
+	export PS1='\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 5)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'	
 fi
 
 
