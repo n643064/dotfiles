@@ -1,0 +1,27 @@
+default: clean run
+
+BUILD_DIR 	:= build_dir
+CPP 		:= g++
+CPPFLAGS	:= -Wall -O2 -fpermissive
+LFLAGS 		:= -lm
+OBJECTS		:= $(shell find src -name "*.cpp" | sed "s/.cpp/.o/g")
+TARGET 		:= ./a.out
+ARGV		:= abcd
+
+OBJECTS_F	:= $(shell echo $(OBJECTS) | sed "s/src/$(BUILD_DIR)/g")
+
+clean: $(BUILD_DIR)
+	find build_dir -not -type d -delete
+	rm -f $(TARGET)
+
+$(BUILD_DIR):
+	mkdir $(shell find src -type d | sed "s/src/$(BUILD_DIR)/g")
+
+%.o: %.cpp
+	$(CPP) $(CPPFLAGS) -c $^ -o $(shell echo $@ | sed "s/src/$(BUILD_DIR)/g")
+	
+$(TARGET): $(BUILD_DIR) $(OBJECTS) 
+	$(CPP) $(OBJECTS_F) $(LFLAGS) -o $(TARGET)
+
+run: $(TARGET)
+	$(TARGET) $(ARGV)
