@@ -36,6 +36,7 @@ alias lsblk="lsblk -f -n -o NAME,SIZE,TYPE,STATE,MOUNTPOINT"
 alias sherlock="sherlock --print-found"
 alias sqlite3="sqlite3 -table"
 alias mount="mount -o X-mount.mkdir"
+alias bat="batcat"
 
 export YDL="/usr/bin/yt-dlp"
 alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
