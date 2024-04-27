@@ -37,6 +37,7 @@ alias sherlock="sherlock --print-found"
 alias sqlite3="sqlite3 -table"
 alias mount="mount -o X-mount.mkdir"
 alias bat="batcat"
+alias mpv="mpv --ao=alsa"
 
 export YDL="$HOME/apps/ydl"
 alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
