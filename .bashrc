@@ -44,5 +44,9 @@ alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' -
 alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio' -o '%(title)s.%(ext)s'"
 alias ydl-at="$YDL -f 'bestaudio[ext=m4a]/bestaudio' -o '%(uploader)s - %(title)s.%(ext)s'"
-
+alias ydlf="$YDL --list-formats"
 export TERM=xterm
+
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+export GTK_IM_MODULE=ibus
