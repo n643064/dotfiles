@@ -39,6 +39,7 @@ alias mount="mount -o X-mount.mkdir"
 alias bat="batcat"
 alias mpv="mpv --ao=alsa"
 alias pse="ps -e -o euser,pid,etime,cmd"
+alias icat="kitty +kitten icat"
 
 export YDL="$HOME/apps/ydl"
 alias ydl="$YDL -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
