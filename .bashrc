@@ -37,7 +37,7 @@ alias sherlock="sherlock --print-found"
 alias sqlite3="sqlite3 -table"
 alias mount="mount -o X-mount.mkdir"
 alias bat="batcat"
-alias mpv="mpv --ao=alsa"
+#alias mpv="mpv --ao=alsa"
 alias pse="ps -e -o euser,pid,etime,cmd"
 alias icat="kitty +kitten icat"
 
@@ -52,3 +52,5 @@ export TERM=xterm
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 export GTK_IM_MODULE=ibus
+
+umask 077
