@@ -27,7 +27,7 @@ fi
 alias ll="ls -lah --color=auto"
 alias ls="ls -a --color=auto"
 alias cp="cp -r"
-alias wip="date && curl https://www.plaintextip.com/ && echo '\n' | tee -a ~/wip.log"
+alias wip="{ date && curl -s https://www.plaintextip.com/ && echo '\n'; } | tee -a ~/wip.log"
 alias lsp="echo \$PATH | tr \":\" \" \" | xargs ls | grep -v \"/\""
 export EDITOR="micro"
 alias back='cd $OLDPWD'
