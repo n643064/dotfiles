@@ -1,3 +1,6 @@
+#!/usr/bin/bash
+# shellcheck disable=SC2139,SC1091
+
 HISTCONTROL=ignoreboth
 shopt -s histappend
 
@@ -33,11 +36,9 @@ export EDITOR="micro"
 alias back='cd $OLDPWD'
 alias ip="ip --color"
 alias lsblk="lsblk -f -n -o NAME,SIZE,TYPE,STATE,MOUNTPOINT"
-alias sherlock="sherlock --print-found"
 alias sqlite3="sqlite3 -table"
 alias mount="mount -o X-mount.mkdir"
 alias bat="batcat"
-#alias mpv="mpv --ao=alsa"
 alias pse="ps -e -o euser,pid,etime,cmd"
 alias icat="kitty +kitten icat"
 
