@@ -13,6 +13,8 @@ shopt -s checkwinsize
 
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
 	export PS1='\[$(tput bold)\]\[$(tput setaf 6)\][SSH] \[$(tput setaf 4)\]\u\[$(tput setaf 5)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'	
+elif ischroot; then
+	export PS1='\[$(tput bold)\]\[$(tput setaf 2)\][CHROOT] \[$(tput setaf 4)\]\u\[$(tput setaf 5)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W \[$(tput setaf 2)\]> \[$(tput sgr0)\]'
 else
 	export PS1='\[$(tput bold)\]\[$(tput setaf 1)\]\u\[$(tput setaf 6)\]@\[$(tput setaf 1)\]\h \[$(tput setaf 6)\]\W\[$(tput setaf 5)\]$(__git_ps1) \[$(tput setaf 2)\]> \[$(tput sgr0)\]'	
 fi
