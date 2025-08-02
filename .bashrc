@@ -50,6 +50,7 @@ alias ydl-wq="$YDL -f 'worstvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudi
 alias ydl-a="$YDL -f 'bestaudio[ext=m4a]/bestaudio' -o '%(title)s.%(ext)s'"
 alias ydl-at="$YDL -f 'bestaudio[ext=m4a]/bestaudio' -o '%(uploader)s - %(title)s.%(ext)s'"
 alias ydlf="$YDL --list-formats"
+alias dc="echo You dumb fucking cretin, you fucking fool, absolute fucking buffoon, you bumbling idiot. Fuck you."
 
 export TERM=xterm
 export XMODIFIERS=@im=ibus
